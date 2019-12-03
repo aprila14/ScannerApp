@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+      <button ion-button block (click)="scan()">Scan</button>
+    <div *ngIf = "scannedData.text">
+      <label>Your barcode is</label>
+      <br>
+      <span>{{scannedData.text}}</span>
+    </div>
+  </div>
+</ion-content>
