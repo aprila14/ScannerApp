@@ -20,6 +20,33 @@
 
 <body>
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyDP2ILIfdys5FyJm4cJFRquAtwXl7Toa7s",
+          authDomain: "intelicook.firebaseapp.com",
+          databaseURL: "https://intelicook.firebaseio.com",
+          projectId: "intelicook",
+          storageBucket: "intelicook.appspot.com",
+          messagingSenderId: "648461288771",
+          appId: "1:648461288771:web:d7a3c6274d10cbb8609bf6",
+          measurementId: "G-MM0YZNC391"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+  </script>
+
 </body>
+
+
+
 
 </html>
